@@ -2,8 +2,8 @@
 weight = float(input("enter your weight:  "))
 height = float(input("enter your height:  "))
 
-86
-#BMI calculation
+
+#BMI calculation based on input
 BMI = int(weight) / float(height) ** 2
 
 #convert 
