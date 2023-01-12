@@ -11,3 +11,9 @@ int_bmi = int(BMI)
 
 #print result
 print(int_bmi)
+
+#if-else
+if int_bmi >= 50:
+    print("you BMI is Obesity")
+else:
+    print(f"Your BMI {int_bmi} is in good condition")
