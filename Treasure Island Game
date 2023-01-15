@@ -1,0 +1,78 @@
+print('''
+*******************************************************************************
+                                                                             
+                                 ____                                         
+                              .-"    `-.      ,                               
+                            .'          '.   /j\                              
+                           /              \,/:/#\                /\           
+                          ;              ,//' '/#\              //#\          
+                          |             /' :   '/#\            /  /#\         
+                          :         ,  /' /'    '/#\__..--""""/    /#\__      
+                           \       /'\'-._:__    '/#\        ;      /#, """---
+                            `-.   / ;#\']" ; """--./#J       ':____...!       
+                               `-/   /#\  J  [;[;[;Y]         |      ;        
+""""""---....             __.--"/    '/#\ ;   " "  |     !    |   #! |        
+             ""--.. _.--""     /      ,/#\'-..____.;_,   |    |   '  |        
+                   "-.        :_....___,/#} "####" | '_.-",   | #['  |        
+                      '-._      |[;[;[;[;|         |.;'  /;\  |      |        
+                      ,   `-.   |        :     _   .;'    /;\ |   #" |        
+                      !      `._:      _  ;   ##' .;'      /;\|  _,  |        
+                     .#\"""---..._    ';, |      .;{___     /;\  ]#' |__....--
+          .--.      ;'/#\         \    ]! |       "| , """--./_J    /         
+         /  '%;    /  '/#\         \   !' :        |!# #! #! #|    :`.__      
+        i__..'%] _:_   ;##J         \      :"#...._!   '  "  "|__  |    `--.._
+         | .--""" !|""""  |"""----...J     | '##"" `-._       |  """---.._    
+     ____: |      #|      |         #|     |          "]      ;   ___...-"T,  
+    /   :  :      !|      |   _______!_    |           |__..--;"""     ,;MM;  
+   :____| :    .-.#|      |  /\      /#\   |          /'               ''MM;  
+    |""": |   /   \|   .----+  ;      /#\  :___..--"";                  ,'MM; 
+   _Y--:  |  ;     ;.-'      ;  \______/#: /         ;                  ''MM; 
+  /    |  | ;_______;     ____!  |"##"""MM!         ;                    ,'MM;
+ !_____|  |  |"#"#"|____.'""##"  |       :         ;                     ''MM  
+  | """"--!._|     |##""         !       !         :____.....-------"""""" |'
+  |          :     |______                        ___!_ "#""#""#"""#"""#"""|  
+__|          ;     |MM"MM"""""---..._______...--""MM"MM]                   |   
+  "\-.      :      |#                                  :                   |  
+    /#'.    |      /##,                                !                   |  
+   .',/'\   |       #:#,                                ;       .==.       |  
+  /"\'#"\',.|       ##;#,                               !     ,'||||',     |  
+        /;/`:       ######,          ____             _ :     M||||||M     |  
+       ###          /;"\.__"-._   """                   |===..M!!!!!!M_____|  
+                           `--..`--.._____             _!_                    
+                                          `--...____,="_.'`-.____        fsc
+
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+choice1 = input('You\'re at the crossroads, where do you want to go? Type "left" or "right".\n')
+
+lower_choice1 = choice1.lower()
+
+if lower_choice1 == "left":
+    choice2 = input('You arrived to the bridge. You need to decide: Wait for a ferry or swim through the river. Type "swim" or "wait".\n').lower()
+    if choice2 == "wait":
+        choice3 = input('You arrived at the entrence to the castle. Chooce the right door to enter and see the queen. Please type "Red", "Blue" or "Yellow".\n').lower()
+        if choice3 == "red":
+            print("Burned by fire.\n Game Over.")
+        elif choice3 == "blue":
+            print("Eaten by beasts.\n Game Over.")
+        elif choice3 == "yellow":
+            print("Door Open, Great!! You can see the Queen.")
+        else:
+            print("Game Over.")
+    else:
+        print("Attacked by trout.\n Game Over.")
+else:
+    print("Fall into a hole.\n   Gamer Over.")
+
+
+
+
+
+
+
+
+
+
